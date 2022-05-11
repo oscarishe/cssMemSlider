@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+.wrapper {
+    display: flex;
+    width: 60%;
+    margin: 50px auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 0.3rem solid darkcyan;
+    border-radius: 10px;
+}
+.slider_container {
+    display: flex;
+    width: 500%;
+    height:100%;
+}
+
+.slider {
+    
+    width:80%;
+    margin: 5% auto 0 auto;
+    overflow: hidden;
+}
+.slider_item {
+    
+    width: 20%;
+    height: 10%;
+    transition: 0.5s;
+}
+.slider_item img {
+    border-radius: 30px;
+    width: 100%;
+    height: 60vh;
+}
+.slider_footer {
+    margin-top:5%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider_navigation {
+    display: flex;
+    width:30%;
+    height:10%;
+    border:1px solid black;
+}
+.slider_navigation_item {
+    display: inline-block;
+    margin:auto;
+    width:2vh;
+    height:2vh;
+    border-radius: 100%;
+    border:3px solid black;
+}
+input[type='radio'] {
+    visibility: hidden;
+    opacity: 0;
+    width:0px;
+    height:0px;
+    padding: 0;
+    margin: 0;
+}
+.footers_texts {
+    width:20%;
+    overflow: hidden;
+}
+.footer_texts_container {
+    display: flex;
+    width:500%;
+    height: 100%;
+}
+.text_item {
+    width:20%;
+    font-size:1.5em;
+    transition: 0.5s;
+}
+#meme1:checked ~ .slider_container .meme1, #meme1:checked ~ .slider_footer .footers_texts .footer_texts_container .item1 {
+    margin-left: 0%;
+}
+#meme2:checked ~ .slider_container .meme1, #meme2:checked ~ .slider_footer .footers_texts .footer_texts_container .item1{
+    margin-left: -20%;
+}
+#meme3:checked ~ .slider_container .meme1, #meme3:checked ~ .slider_footer .footers_texts .footer_texts_container .item1 {
+    margin-left: -40%;
+}
+#meme4:checked ~ .slider_container .meme1, #meme4:checked ~ .slider_footer .footers_texts .footer_texts_container .item1 {
+    margin-left: -60%;
+}
+#meme5:checked ~ .slider_container .meme1, #meme5:checked ~ .slider_footer .footers_texts .footer_texts_container .item1 {
+    margin-left: -80%;
+}
+
+
