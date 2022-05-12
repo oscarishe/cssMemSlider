@@ -7,12 +7,12 @@ body {
 .wrapper {
     display: flex;
     width: 60%;
-    margin: 50px auto;
+    margin: 5% auto;
     height: 100%;
     justify-content: center;
     align-items: center;
     border: 0.3rem solid darkcyan;
-    border-radius: 10px;
+    border-radius: 5%;
     background-color: wheat;
 }
 .slider_container {
@@ -31,10 +31,10 @@ body {
     
     width: 20%;
     height: 10%;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 .slider_item img {
-    border-radius: 30px;
+    border-radius: 5%;
     width: 100%;
     height: 60vh;
 }
@@ -70,8 +70,8 @@ body {
 input[type='radio'] {
     visibility: hidden;
     opacity: 0;
-    width:0px;
-    height:0px;
+    width:0;
+    height:0;
     padding: 0;
     margin: 0;
 }
@@ -86,9 +86,10 @@ input[type='radio'] {
     height: 100%;
 }
 .text_item {
+    font-weight: bolder;
     width:20%;
     font-size:1.3em;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 #meme1:checked ~ .slider_container .meme1, #meme1:checked ~ .slider_footer .footers_texts .footer_texts_container .item1 {
     margin-left: 0%;
@@ -136,10 +137,15 @@ span:active {
     }
     .footers_texts {
         width:100%;
-        margin-bottom: 7%;
+        margin-bottom: 10%;
     }
     .slider_navigation {
+        width:40%;
         margin: auto;
-        margin-bottom:5%;
+        margin-bottom:7%;
+    }
+    .text_item {
+        font-size:1em;
+        
     }
 }
