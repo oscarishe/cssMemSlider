@@ -47,7 +47,7 @@ body {
 }
 .slider_navigation {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
     width:30%;
     height:10%;
 }
@@ -127,5 +127,19 @@ span:active {
     border: 0.1em solid darkblue;
 }
 
-
-
+@media (max-width:767px) {
+    .slider_item img {
+        height: 40vh;
+    }
+    .slider_footer {
+        flex-wrap: wrap-reverse;
+    }
+    .footers_texts {
+        width:100%;
+        margin-bottom: 7%;
+    }
+    .slider_navigation {
+        margin: auto;
+        margin-bottom:5%;
+    }
+}
