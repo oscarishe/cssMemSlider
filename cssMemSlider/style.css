@@ -107,11 +107,11 @@ input[type='radio'] {
 label:hover {
     cursor: pointer;
 }
-span:hover {
+label:hover span {
     background: lightgreen;
     border:0.1em solid lightgreen;
 }
-span:active {
+label:active span {
     background: red;
     border:0.1em solid red;
     transform: scale(1.5);
